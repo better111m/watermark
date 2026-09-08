@@ -1,0 +1,1564 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>水印嵌入效果报告</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { display: flex; align-items: flex-start; margin-bottom: 30px; }
+        .image-container { margin-right: 30px; text-align: center; }
+        .image-container img { max-width: 300px; max-height: 300px; border: 1px solid #ccc; }
+        .info { min-width: 200px; }
+        h3 { margin-top: 5px; margin-bottom: 5px; }
+        .metrics { margin-top: 10px; }
+        .metrics p { margin: 5px 0; }
+        .header { background-color: #f2f2f2; padding: 10px; border-radius: 5px; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>水印嵌入效果报告</h1>
+        <p>本报告展示了原始图片与嵌入水印后图片的对比，以及相关评估指标(SSIM, PSNR, 64位提取率, 39位提取率)</p>
+    </div>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/01.jpg" alt="Original Image: 01.jpg">
+            <p>./imgs_new1/01.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/01.png" alt="Watermarked Image: 01.jpg">
+            <p>./imgs_new2/01.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 01.jpg</p>
+                <p><strong>SSIM:</strong> 0.9848</p>
+                <p><strong>PSNR:</strong> 37.6142 dB</p>
+                <p><strong>64位提取率:</strong> 90.62%</p>
+                <p><strong>39位提取率:</strong> 92.31%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/02.jpg" alt="Original Image: 02.jpg">
+            <p>./imgs_new1/02.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/02.png" alt="Watermarked Image: 02.jpg">
+            <p>./imgs_new2/02.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 02.jpg</p>
+                <p><strong>SSIM:</strong> 0.9890</p>
+                <p><strong>PSNR:</strong> 38.9804 dB</p>
+                <p><strong>64位提取率:</strong> 92.19%</p>
+                <p><strong>39位提取率:</strong> 92.31%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/03.jpg" alt="Original Image: 03.jpg">
+            <p>./imgs_new1/03.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/03.png" alt="Watermarked Image: 03.jpg">
+            <p>./imgs_new2/03.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 03.jpg</p>
+                <p><strong>SSIM:</strong> 0.9859</p>
+                <p><strong>PSNR:</strong> 38.0247 dB</p>
+                <p><strong>64位提取率:</strong> 93.75%</p>
+                <p><strong>39位提取率:</strong> 100.00%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/04.jpg" alt="Original Image: 04.jpg">
+            <p>./imgs_new1/04.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/04.png" alt="Watermarked Image: 04.jpg">
+            <p>./imgs_new2/04.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 04.jpg</p>
+                <p><strong>SSIM:</strong> 0.9895</p>
+                <p><strong>PSNR:</strong> 38.9869 dB</p>
+                <p><strong>64位提取率:</strong> 93.75%</p>
+                <p><strong>39位提取率:</strong> 100.00%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/05.jpg" alt="Original Image: 05.jpg">
+            <p>./imgs_new1/05.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/05.png" alt="Watermarked Image: 05.jpg">
+            <p>./imgs_new2/05.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 05.jpg</p>
+                <p><strong>SSIM:</strong> 0.9809</p>
+                <p><strong>PSNR:</strong> 37.5250 dB</p>
+                <p><strong>64位提取率:</strong> 93.75%</p>
+                <p><strong>39位提取率:</strong> 100.00%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/06.jpg" alt="Original Image: 06.jpg">
+            <p>./imgs_new1/06.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/06.png" alt="Watermarked Image: 06.jpg">
+            <p>./imgs_new2/06.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 06.jpg</p>
+                <p><strong>SSIM:</strong> 0.9869</p>
+                <p><strong>PSNR:</strong> 37.9083 dB</p>
+                <p><strong>64位提取率:</strong> 89.06%</p>
+                <p><strong>39位提取率:</strong> 92.31%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/07.jpg" alt="Original Image: 07.jpg">
+            <p>./imgs_new1/07.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/07.png" alt="Watermarked Image: 07.jpg">
+            <p>./imgs_new2/07.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 07.jpg</p>
+                <p><strong>SSIM:</strong> 0.9791</p>
+                <p><strong>PSNR:</strong> 36.5525 dB</p>
+                <p><strong>64位提取率:</strong> 85.94%</p>
+                <p><strong>39位提取率:</strong> 84.62%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/08.jpg" alt="Original Image: 08.jpg">
+            <p>./imgs_new1/08.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/08.png" alt="Watermarked Image: 08.jpg">
+            <p>./imgs_new2/08.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 08.jpg</p>
+                <p><strong>SSIM:</strong> 0.9787</p>
+                <p><strong>PSNR:</strong> 37.3515 dB</p>
+                <p><strong>64位提取率:</strong> 93.75%</p>
+                <p><strong>39位提取率:</strong> 100.00%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/09.jpg" alt="Original Image: 09.jpg">
+            <p>./imgs_new1/09.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/09.png" alt="Watermarked Image: 09.jpg">
+            <p>./imgs_new2/09.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 09.jpg</p>
+                <p><strong>SSIM:</strong> 0.9882</p>
+                <p><strong>PSNR:</strong> 38.0859 dB</p>
+                <p><strong>64位提取率:</strong> 89.06%</p>
+                <p><strong>39位提取率:</strong> 94.87%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/10.jpg" alt="Original Image: 10.jpg">
+            <p>./imgs_new1/10.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/10.png" alt="Watermarked Image: 10.jpg">
+            <p>./imgs_new2/10.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 10.jpg</p>
+                <p><strong>SSIM:</strong> 0.9797</p>
+                <p><strong>PSNR:</strong> 36.8008 dB</p>
+                <p><strong>64位提取率:</strong> 76.56%</p>
+                <p><strong>39位提取率:</strong> 74.36%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/11.jpg" alt="Original Image: 11.jpg">
+            <p>./imgs_new1/11.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/11.png" alt="Watermarked Image: 11.jpg">
+            <p>./imgs_new2/11.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 11.jpg</p>
+                <p><strong>SSIM:</strong> 0.9816</p>
+                <p><strong>PSNR:</strong> 36.9648 dB</p>
+                <p><strong>64位提取率:</strong> 79.69%</p>
+                <p><strong>39位提取率:</strong> 79.49%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/12.jpg" alt="Original Image: 12.jpg">
+            <p>./imgs_new1/12.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/12.png" alt="Watermarked Image: 12.jpg">
+            <p>./imgs_new2/12.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 12.jpg</p>
+                <p><strong>SSIM:</strong> 0.9718</p>
+                <p><strong>PSNR:</strong> 36.9013 dB</p>
+                <p><strong>64位提取率:</strong> 96.88%</p>
+                <p><strong>39位提取率:</strong> 100.00%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/13.jpg" alt="Original Image: 13.jpg">
+            <p>./imgs_new1/13.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/13.png" alt="Watermarked Image: 13.jpg">
+            <p>./imgs_new2/13.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 13.jpg</p>
+                <p><strong>SSIM:</strong> 0.9819</p>
+                <p><strong>PSNR:</strong> 38.4139 dB</p>
+                <p><strong>64位提取率:</strong> 95.31%</p>
+                <p><strong>39位提取率:</strong> 100.00%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/14.jpg" alt="Original Image: 14.jpg">
+            <p>./imgs_new1/14.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/14.png" alt="Watermarked Image: 14.jpg">
+            <p>./imgs_new2/14.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 14.jpg</p>
+                <p><strong>SSIM:</strong> 0.9848</p>
+                <p><strong>PSNR:</strong> 38.6862 dB</p>
+                <p><strong>64位提取率:</strong> 93.75%</p>
+                <p><strong>39位提取率:</strong> 100.00%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/15.jpg" alt="Original Image: 15.jpg">
+            <p>./imgs_new1/15.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/15.png" alt="Watermarked Image: 15.jpg">
+            <p>./imgs_new2/15.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 15.jpg</p>
+                <p><strong>SSIM:</strong> 0.9866</p>
+                <p><strong>PSNR:</strong> 39.5074 dB</p>
+                <p><strong>64位提取率:</strong> 98.44%</p>
+                <p><strong>39位提取率:</strong> 100.00%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/16.jpg" alt="Original Image: 16.jpg">
+            <p>./imgs_new1/16.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/16.png" alt="Watermarked Image: 16.jpg">
+            <p>./imgs_new2/16.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 16.jpg</p>
+                <p><strong>SSIM:</strong> 0.9873</p>
+                <p><strong>PSNR:</strong> 39.0520 dB</p>
+                <p><strong>64位提取率:</strong> 92.19%</p>
+                <p><strong>39位提取率:</strong> 87.18%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/17.jpg" alt="Original Image: 17.jpg">
+            <p>./imgs_new1/17.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/17.png" alt="Watermarked Image: 17.jpg">
+            <p>./imgs_new2/17.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 17.jpg</p>
+                <p><strong>SSIM:</strong> 0.9825</p>
+                <p><strong>PSNR:</strong> 37.9441 dB</p>
+                <p><strong>64位提取率:</strong> 93.75%</p>
+                <p><strong>39位提取率:</strong> 100.00%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/18.jpg" alt="Original Image: 18.jpg">
+            <p>./imgs_new1/18.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/18.png" alt="Watermarked Image: 18.jpg">
+            <p>./imgs_new2/18.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 18.jpg</p>
+                <p><strong>SSIM:</strong> 0.9875</p>
+                <p><strong>PSNR:</strong> 38.6476 dB</p>
+                <p><strong>64位提取率:</strong> 93.75%</p>
+                <p><strong>39位提取率:</strong> 100.00%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/19.jpg" alt="Original Image: 19.jpg">
+            <p>./imgs_new1/19.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/19.png" alt="Watermarked Image: 19.jpg">
+            <p>./imgs_new2/19.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 19.jpg</p>
+                <p><strong>SSIM:</strong> 0.9865</p>
+                <p><strong>PSNR:</strong> 39.1271 dB</p>
+                <p><strong>64位提取率:</strong> 96.88%</p>
+                <p><strong>39位提取率:</strong> 100.00%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/20.jpg" alt="Original Image: 20.jpg">
+            <p>./imgs_new1/20.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/20.png" alt="Watermarked Image: 20.jpg">
+            <p>./imgs_new2/20.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 20.jpg</p>
+                <p><strong>SSIM:</strong> 0.9590</p>
+                <p><strong>PSNR:</strong> 33.8706 dB</p>
+                <p><strong>64位提取率:</strong> 93.75%</p>
+                <p><strong>39位提取率:</strong> 100.00%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/21.jpg" alt="Original Image: 21.jpg">
+            <p>./imgs_new1/21.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/21.png" alt="Watermarked Image: 21.jpg">
+            <p>./imgs_new2/21.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 21.jpg</p>
+                <p><strong>SSIM:</strong> 0.9776</p>
+                <p><strong>PSNR:</strong> 37.6262 dB</p>
+                <p><strong>64位提取率:</strong> 92.19%</p>
+                <p><strong>39位提取率:</strong> 92.31%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/22.jpg" alt="Original Image: 22.jpg">
+            <p>./imgs_new1/22.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/22.png" alt="Watermarked Image: 22.jpg">
+            <p>./imgs_new2/22.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 22.jpg</p>
+                <p><strong>SSIM:</strong> 0.9735</p>
+                <p><strong>PSNR:</strong> 36.8342 dB</p>
+                <p><strong>64位提取率:</strong> 95.31%</p>
+                <p><strong>39位提取率:</strong> 100.00%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/23.jpg" alt="Original Image: 23.jpg">
+            <p>./imgs_new1/23.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/23.png" alt="Watermarked Image: 23.jpg">
+            <p>./imgs_new2/23.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 23.jpg</p>
+                <p><strong>SSIM:</strong> 0.9721</p>
+                <p><strong>PSNR:</strong> 36.8821 dB</p>
+                <p><strong>64位提取率:</strong> 95.31%</p>
+                <p><strong>39位提取率:</strong> 100.00%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/24.jpg" alt="Original Image: 24.jpg">
+            <p>./imgs_new1/24.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/24.png" alt="Watermarked Image: 24.jpg">
+            <p>./imgs_new2/24.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 24.jpg</p>
+                <p><strong>SSIM:</strong> 0.9859</p>
+                <p><strong>PSNR:</strong> 38.9862 dB</p>
+                <p><strong>64位提取率:</strong> 100.00%</p>
+                <p><strong>39位提取率:</strong> 100.00%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/25.jpg" alt="Original Image: 25.jpg">
+            <p>./imgs_new1/25.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/25.png" alt="Watermarked Image: 25.jpg">
+            <p>./imgs_new2/25.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 25.jpg</p>
+                <p><strong>SSIM:</strong> 0.9835</p>
+                <p><strong>PSNR:</strong> 37.2612 dB</p>
+                <p><strong>64位提取率:</strong> 87.50%</p>
+                <p><strong>39位提取率:</strong> 89.74%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/26.jpg" alt="Original Image: 26.jpg">
+            <p>./imgs_new1/26.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/26.png" alt="Watermarked Image: 26.jpg">
+            <p>./imgs_new2/26.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 26.jpg</p>
+                <p><strong>SSIM:</strong> 0.9765</p>
+                <p><strong>PSNR:</strong> 36.4979 dB</p>
+                <p><strong>64位提取率:</strong> 85.94%</p>
+                <p><strong>39位提取率:</strong> 82.05%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/27.jpg" alt="Original Image: 27.jpg">
+            <p>./imgs_new1/27.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/27.png" alt="Watermarked Image: 27.jpg">
+            <p>./imgs_new2/27.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 27.jpg</p>
+                <p><strong>SSIM:</strong> 0.9684</p>
+                <p><strong>PSNR:</strong> 36.4967 dB</p>
+                <p><strong>64位提取率:</strong> 90.62%</p>
+                <p><strong>39位提取率:</strong> 84.62%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/28.jpg" alt="Original Image: 28.jpg">
+            <p>./imgs_new1/28.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/28.png" alt="Watermarked Image: 28.jpg">
+            <p>./imgs_new2/28.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 28.jpg</p>
+                <p><strong>SSIM:</strong> 0.9805</p>
+                <p><strong>PSNR:</strong> 37.5568 dB</p>
+                <p><strong>64位提取率:</strong> 89.06%</p>
+                <p><strong>39位提取率:</strong> 84.62%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/29.jpg" alt="Original Image: 29.jpg">
+            <p>./imgs_new1/29.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/29.png" alt="Watermarked Image: 29.jpg">
+            <p>./imgs_new2/29.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 29.jpg</p>
+                <p><strong>SSIM:</strong> 0.9834</p>
+                <p><strong>PSNR:</strong> 37.9678 dB</p>
+                <p><strong>64位提取率:</strong> 92.19%</p>
+                <p><strong>39位提取率:</strong> 92.31%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/30.jpg" alt="Original Image: 30.jpg">
+            <p>./imgs_new1/30.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/30.png" alt="Watermarked Image: 30.jpg">
+            <p>./imgs_new2/30.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 30.jpg</p>
+                <p><strong>SSIM:</strong> 0.9729</p>
+                <p><strong>PSNR:</strong> 36.0664 dB</p>
+                <p><strong>64位提取率:</strong> 85.94%</p>
+                <p><strong>39位提取率:</strong> 79.49%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/31.jpg" alt="Original Image: 31.jpg">
+            <p>./imgs_new1/31.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/31.png" alt="Watermarked Image: 31.jpg">
+            <p>./imgs_new2/31.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 31.jpg</p>
+                <p><strong>SSIM:</strong> 0.9805</p>
+                <p><strong>PSNR:</strong> 38.1326 dB</p>
+                <p><strong>64位提取率:</strong> 98.44%</p>
+                <p><strong>39位提取率:</strong> 100.00%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/32.jpg" alt="Original Image: 32.jpg">
+            <p>./imgs_new1/32.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/32.png" alt="Watermarked Image: 32.jpg">
+            <p>./imgs_new2/32.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 32.jpg</p>
+                <p><strong>SSIM:</strong> 0.9798</p>
+                <p><strong>PSNR:</strong> 37.5196 dB</p>
+                <p><strong>64位提取率:</strong> 82.81%</p>
+                <p><strong>39位提取率:</strong> 92.31%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/33.jpg" alt="Original Image: 33.jpg">
+            <p>./imgs_new1/33.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/33.png" alt="Watermarked Image: 33.jpg">
+            <p>./imgs_new2/33.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 33.jpg</p>
+                <p><strong>SSIM:</strong> 0.9831</p>
+                <p><strong>PSNR:</strong> 38.3225 dB</p>
+                <p><strong>64位提取率:</strong> 98.44%</p>
+                <p><strong>39位提取率:</strong> 100.00%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/34.jpg" alt="Original Image: 34.jpg">
+            <p>./imgs_new1/34.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/34.png" alt="Watermarked Image: 34.jpg">
+            <p>./imgs_new2/34.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 34.jpg</p>
+                <p><strong>SSIM:</strong> 0.9756</p>
+                <p><strong>PSNR:</strong> 37.3879 dB</p>
+                <p><strong>64位提取率:</strong> 100.00%</p>
+                <p><strong>39位提取率:</strong> 100.00%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/35.jpg" alt="Original Image: 35.jpg">
+            <p>./imgs_new1/35.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/35.png" alt="Watermarked Image: 35.jpg">
+            <p>./imgs_new2/35.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 35.jpg</p>
+                <p><strong>SSIM:</strong> 0.9887</p>
+                <p><strong>PSNR:</strong> 38.2201 dB</p>
+                <p><strong>64位提取率:</strong> 92.19%</p>
+                <p><strong>39位提取率:</strong> 89.74%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/36.jpg" alt="Original Image: 36.jpg">
+            <p>./imgs_new1/36.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/36.png" alt="Watermarked Image: 36.jpg">
+            <p>./imgs_new2/36.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 36.jpg</p>
+                <p><strong>SSIM:</strong> 0.9719</p>
+                <p><strong>PSNR:</strong> 36.1842 dB</p>
+                <p><strong>64位提取率:</strong> 85.94%</p>
+                <p><strong>39位提取率:</strong> 82.05%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/37.jpg" alt="Original Image: 37.jpg">
+            <p>./imgs_new1/37.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/37.png" alt="Watermarked Image: 37.jpg">
+            <p>./imgs_new2/37.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 37.jpg</p>
+                <p><strong>SSIM:</strong> 0.9801</p>
+                <p><strong>PSNR:</strong> 37.4215 dB</p>
+                <p><strong>64位提取率:</strong> 85.94%</p>
+                <p><strong>39位提取率:</strong> 89.74%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/38.jpg" alt="Original Image: 38.jpg">
+            <p>./imgs_new1/38.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/38.png" alt="Watermarked Image: 38.jpg">
+            <p>./imgs_new2/38.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 38.jpg</p>
+                <p><strong>SSIM:</strong> 0.9811</p>
+                <p><strong>PSNR:</strong> 36.9276 dB</p>
+                <p><strong>64位提取率:</strong> 87.50%</p>
+                <p><strong>39位提取率:</strong> 89.74%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/39.jpg" alt="Original Image: 39.jpg">
+            <p>./imgs_new1/39.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/39.png" alt="Watermarked Image: 39.jpg">
+            <p>./imgs_new2/39.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 39.jpg</p>
+                <p><strong>SSIM:</strong> 0.9872</p>
+                <p><strong>PSNR:</strong> 38.4844 dB</p>
+                <p><strong>64位提取率:</strong> 95.31%</p>
+                <p><strong>39位提取率:</strong> 100.00%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/40.jpg" alt="Original Image: 40.jpg">
+            <p>./imgs_new1/40.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/40.png" alt="Watermarked Image: 40.jpg">
+            <p>./imgs_new2/40.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 40.jpg</p>
+                <p><strong>SSIM:</strong> 0.9851</p>
+                <p><strong>PSNR:</strong> 38.1898 dB</p>
+                <p><strong>64位提取率:</strong> 89.06%</p>
+                <p><strong>39位提取率:</strong> 87.18%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/41.jpg" alt="Original Image: 41.jpg">
+            <p>./imgs_new1/41.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/41.png" alt="Watermarked Image: 41.jpg">
+            <p>./imgs_new2/41.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 41.jpg</p>
+                <p><strong>SSIM:</strong> 0.9923</p>
+                <p><strong>PSNR:</strong> 39.7110 dB</p>
+                <p><strong>64位提取率:</strong> 95.31%</p>
+                <p><strong>39位提取率:</strong> 100.00%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/42.jpg" alt="Original Image: 42.jpg">
+            <p>./imgs_new1/42.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/42.png" alt="Watermarked Image: 42.jpg">
+            <p>./imgs_new2/42.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 42.jpg</p>
+                <p><strong>SSIM:</strong> 0.9870</p>
+                <p><strong>PSNR:</strong> 38.9102 dB</p>
+                <p><strong>64位提取率:</strong> 95.31%</p>
+                <p><strong>39位提取率:</strong> 100.00%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/43.jpg" alt="Original Image: 43.jpg">
+            <p>./imgs_new1/43.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/43.png" alt="Watermarked Image: 43.jpg">
+            <p>./imgs_new2/43.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 43.jpg</p>
+                <p><strong>SSIM:</strong> 0.9940</p>
+                <p><strong>PSNR:</strong> 38.2018 dB</p>
+                <p><strong>64位提取率:</strong> 92.19%</p>
+                <p><strong>39位提取率:</strong> 92.31%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/44.jpg" alt="Original Image: 44.jpg">
+            <p>./imgs_new1/44.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/44.png" alt="Watermarked Image: 44.jpg">
+            <p>./imgs_new2/44.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 44.jpg</p>
+                <p><strong>SSIM:</strong> 0.9838</p>
+                <p><strong>PSNR:</strong> 38.1384 dB</p>
+                <p><strong>64位提取率:</strong> 90.62%</p>
+                <p><strong>39位提取率:</strong> 87.18%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/45.jpg" alt="Original Image: 45.jpg">
+            <p>./imgs_new1/45.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/45.png" alt="Watermarked Image: 45.jpg">
+            <p>./imgs_new2/45.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 45.jpg</p>
+                <p><strong>SSIM:</strong> 0.9755</p>
+                <p><strong>PSNR:</strong> 36.8894 dB</p>
+                <p><strong>64位提取率:</strong> 92.19%</p>
+                <p><strong>39位提取率:</strong> 92.31%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/46.jpg" alt="Original Image: 46.jpg">
+            <p>./imgs_new1/46.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/46.png" alt="Watermarked Image: 46.jpg">
+            <p>./imgs_new2/46.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 46.jpg</p>
+                <p><strong>SSIM:</strong> 0.9868</p>
+                <p><strong>PSNR:</strong> 39.1589 dB</p>
+                <p><strong>64位提取率:</strong> 96.88%</p>
+                <p><strong>39位提取率:</strong> 100.00%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/47.jpg" alt="Original Image: 47.jpg">
+            <p>./imgs_new1/47.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/47.png" alt="Watermarked Image: 47.jpg">
+            <p>./imgs_new2/47.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 47.jpg</p>
+                <p><strong>SSIM:</strong> 0.9824</p>
+                <p><strong>PSNR:</strong> 37.8693 dB</p>
+                <p><strong>64位提取率:</strong> 87.50%</p>
+                <p><strong>39位提取率:</strong> 89.74%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/48.jpg" alt="Original Image: 48.jpg">
+            <p>./imgs_new1/48.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/48.png" alt="Watermarked Image: 48.jpg">
+            <p>./imgs_new2/48.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 48.jpg</p>
+                <p><strong>SSIM:</strong> 0.9846</p>
+                <p><strong>PSNR:</strong> 37.5816 dB</p>
+                <p><strong>64位提取率:</strong> 95.31%</p>
+                <p><strong>39位提取率:</strong> 100.00%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/49.jpg" alt="Original Image: 49.jpg">
+            <p>./imgs_new1/49.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/49.png" alt="Watermarked Image: 49.jpg">
+            <p>./imgs_new2/49.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 49.jpg</p>
+                <p><strong>SSIM:</strong> 0.9914</p>
+                <p><strong>PSNR:</strong> 40.1023 dB</p>
+                <p><strong>64位提取率:</strong> 100.00%</p>
+                <p><strong>39位提取率:</strong> 100.00%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/50.jpg" alt="Original Image: 50.jpg">
+            <p>./imgs_new1/50.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/50.png" alt="Watermarked Image: 50.jpg">
+            <p>./imgs_new2/50.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 50.jpg</p>
+                <p><strong>SSIM:</strong> 0.9828</p>
+                <p><strong>PSNR:</strong> 36.9690 dB</p>
+                <p><strong>64位提取率:</strong> 85.94%</p>
+                <p><strong>39位提取率:</strong> 82.05%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/51.jpg" alt="Original Image: 51.jpg">
+            <p>./imgs_new1/51.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/51.png" alt="Watermarked Image: 51.jpg">
+            <p>./imgs_new2/51.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 51.jpg</p>
+                <p><strong>SSIM:</strong> 0.9892</p>
+                <p><strong>PSNR:</strong> 38.3691 dB</p>
+                <p><strong>64位提取率:</strong> 92.19%</p>
+                <p><strong>39位提取率:</strong> 92.31%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/52.jpg" alt="Original Image: 52.jpg">
+            <p>./imgs_new1/52.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/52.png" alt="Watermarked Image: 52.jpg">
+            <p>./imgs_new2/52.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 52.jpg</p>
+                <p><strong>SSIM:</strong> 0.9769</p>
+                <p><strong>PSNR:</strong> 36.6201 dB</p>
+                <p><strong>64位提取率:</strong> 87.50%</p>
+                <p><strong>39位提取率:</strong> 82.05%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/53.jpg" alt="Original Image: 53.jpg">
+            <p>./imgs_new1/53.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/53.png" alt="Watermarked Image: 53.jpg">
+            <p>./imgs_new2/53.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 53.jpg</p>
+                <p><strong>SSIM:</strong> 0.9850</p>
+                <p><strong>PSNR:</strong> 37.9120 dB</p>
+                <p><strong>64位提取率:</strong> 92.19%</p>
+                <p><strong>39位提取率:</strong> 92.31%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/54.jpg" alt="Original Image: 54.jpg">
+            <p>./imgs_new1/54.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/54.png" alt="Watermarked Image: 54.jpg">
+            <p>./imgs_new2/54.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 54.jpg</p>
+                <p><strong>SSIM:</strong> 0.9725</p>
+                <p><strong>PSNR:</strong> 36.9449 dB</p>
+                <p><strong>64位提取率:</strong> 95.31%</p>
+                <p><strong>39位提取率:</strong> 100.00%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/55.jpg" alt="Original Image: 55.jpg">
+            <p>./imgs_new1/55.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/55.png" alt="Watermarked Image: 55.jpg">
+            <p>./imgs_new2/55.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 55.jpg</p>
+                <p><strong>SSIM:</strong> 0.9630</p>
+                <p><strong>PSNR:</strong> 35.6747 dB</p>
+                <p><strong>64位提取率:</strong> 92.19%</p>
+                <p><strong>39位提取率:</strong> 92.31%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/56.jpg" alt="Original Image: 56.jpg">
+            <p>./imgs_new1/56.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/56.png" alt="Watermarked Image: 56.jpg">
+            <p>./imgs_new2/56.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 56.jpg</p>
+                <p><strong>SSIM:</strong> 0.9704</p>
+                <p><strong>PSNR:</strong> 36.5572 dB</p>
+                <p><strong>64位提取率:</strong> 92.19%</p>
+                <p><strong>39位提取率:</strong> 89.74%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/57.jpg" alt="Original Image: 57.jpg">
+            <p>./imgs_new1/57.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/57.png" alt="Watermarked Image: 57.jpg">
+            <p>./imgs_new2/57.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 57.jpg</p>
+                <p><strong>SSIM:</strong> 0.9827</p>
+                <p><strong>PSNR:</strong> 38.7091 dB</p>
+                <p><strong>64位提取率:</strong> 98.44%</p>
+                <p><strong>39位提取率:</strong> 100.00%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/58.jpg" alt="Original Image: 58.jpg">
+            <p>./imgs_new1/58.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/58.png" alt="Watermarked Image: 58.jpg">
+            <p>./imgs_new2/58.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 58.jpg</p>
+                <p><strong>SSIM:</strong> 0.9884</p>
+                <p><strong>PSNR:</strong> 38.3484 dB</p>
+                <p><strong>64位提取率:</strong> 92.19%</p>
+                <p><strong>39位提取率:</strong> 92.31%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/59.jpg" alt="Original Image: 59.jpg">
+            <p>./imgs_new1/59.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/59.png" alt="Watermarked Image: 59.jpg">
+            <p>./imgs_new2/59.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 59.jpg</p>
+                <p><strong>SSIM:</strong> 0.9900</p>
+                <p><strong>PSNR:</strong> 39.9690 dB</p>
+                <p><strong>64位提取率:</strong> 95.31%</p>
+                <p><strong>39位提取率:</strong> 100.00%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/60.jpg" alt="Original Image: 60.jpg">
+            <p>./imgs_new1/60.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/60.png" alt="Watermarked Image: 60.jpg">
+            <p>./imgs_new2/60.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 60.jpg</p>
+                <p><strong>SSIM:</strong> 0.9881</p>
+                <p><strong>PSNR:</strong> 39.5343 dB</p>
+                <p><strong>64位提取率:</strong> 98.44%</p>
+                <p><strong>39位提取率:</strong> 100.00%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/61.jpg" alt="Original Image: 61.jpg">
+            <p>./imgs_new1/61.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/61.png" alt="Watermarked Image: 61.jpg">
+            <p>./imgs_new2/61.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 61.jpg</p>
+                <p><strong>SSIM:</strong> 0.9892</p>
+                <p><strong>PSNR:</strong> 39.9021 dB</p>
+                <p><strong>64位提取率:</strong> 100.00%</p>
+                <p><strong>39位提取率:</strong> 100.00%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/62.jpg" alt="Original Image: 62.jpg">
+            <p>./imgs_new1/62.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/62.png" alt="Watermarked Image: 62.jpg">
+            <p>./imgs_new2/62.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 62.jpg</p>
+                <p><strong>SSIM:</strong> 0.9882</p>
+                <p><strong>PSNR:</strong> 39.4220 dB</p>
+                <p><strong>64位提取率:</strong> 100.00%</p>
+                <p><strong>39位提取率:</strong> 100.00%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/63.jpg" alt="Original Image: 63.jpg">
+            <p>./imgs_new1/63.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/63.png" alt="Watermarked Image: 63.jpg">
+            <p>./imgs_new2/63.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 63.jpg</p>
+                <p><strong>SSIM:</strong> 0.9928</p>
+                <p><strong>PSNR:</strong> 40.2361 dB</p>
+                <p><strong>64位提取率:</strong> 98.44%</p>
+                <p><strong>39位提取率:</strong> 100.00%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/64.jpg" alt="Original Image: 64.jpg">
+            <p>./imgs_new1/64.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/64.png" alt="Watermarked Image: 64.jpg">
+            <p>./imgs_new2/64.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 64.jpg</p>
+                <p><strong>SSIM:</strong> 0.9857</p>
+                <p><strong>PSNR:</strong> 38.3038 dB</p>
+                <p><strong>64位提取率:</strong> 89.06%</p>
+                <p><strong>39位提取率:</strong> 87.18%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/65.jpg" alt="Original Image: 65.jpg">
+            <p>./imgs_new1/65.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/65.png" alt="Watermarked Image: 65.jpg">
+            <p>./imgs_new2/65.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 65.jpg</p>
+                <p><strong>SSIM:</strong> 0.9766</p>
+                <p><strong>PSNR:</strong> 37.1911 dB</p>
+                <p><strong>64位提取率:</strong> 84.38%</p>
+                <p><strong>39位提取率:</strong> 84.62%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/66.jpg" alt="Original Image: 66.jpg">
+            <p>./imgs_new1/66.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/66.png" alt="Watermarked Image: 66.jpg">
+            <p>./imgs_new2/66.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 66.jpg</p>
+                <p><strong>SSIM:</strong> 0.9795</p>
+                <p><strong>PSNR:</strong> 36.5240 dB</p>
+                <p><strong>64位提取率:</strong> 84.38%</p>
+                <p><strong>39位提取率:</strong> 82.05%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/67.jpg" alt="Original Image: 67.jpg">
+            <p>./imgs_new1/67.jpg</p>
+        </div>
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/67.png" alt="Watermarked Image: 67.jpg">
+            <p>./imgs_new2/67.png</p>
+        </div>
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 67.jpg</p>
+                <p><strong>SSIM:</strong> 0.9846</p>
+                <p><strong>PSNR:</strong> 37.8300 dB</p>
+                <p><strong>64位提取率:</strong> 90.62%</p>
+                <p><strong>39位提取率:</strong> 87.18%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+</body>
+</html>

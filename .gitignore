@@ -1,0 +1,9 @@
+# Operating system and temporary office files
+.DS_Store
+._*
+Thumbs.db
+.~*
+~$*
+
+# Generated intermediate outputs (large and reproducible)
+watermark_intermediates/

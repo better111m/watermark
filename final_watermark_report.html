@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>水印嵌入效果报告</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .container { display: flex; align-items: flex-start; margin-bottom: 30px; }
+        .image-container { margin-right: 30px; text-align: center; }
+        .image-container img { max-width: 300px; max-height: 300px; border: 1px solid #ccc; }
+        .info { min-width: 200px; }
+        h3 { margin-top: 5px; margin-bottom: 5px; }
+        .metrics { margin-top: 10px; }
+        .metrics p { margin: 5px 0; }
+        .header { background-color: #f2f2f2; padding: 10px; border-radius: 5px; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>水印嵌入效果报告</h1>
+        <p>本报告展示了原始图片与嵌入水印后图片的对比，以及相关评估指标(SSIM, PSNR, 64位提取率, 39位提取率)</p>
+    </div>
+
+    <!-- 根据 watermark_results.txt 文件内容动态生成 -->
+    <div class="container">
+        <div class="image-container">
+            <h3>原始图片</h3>
+            <img src="./imgs_new1/1.jpg" alt="Original Image: 1.jpg">
+            <p>./imgs_new1/1.jpg</p>
+        </div>
+
+        <div class="image-container">
+            <h3>嵌入水印后</h3>
+            <img src="./imgs_new2/1.png" alt="Watermarked Image: 1.png">
+            <p>./imgs_new2/1.png</p>
+        </div>
+
+        <div class="info">
+            <h3>评估指标</h3>
+            <div class="metrics">
+                <p><strong>图片名称:</strong> 1.jpg</p>
+                <p><strong>SSIM:</strong> 0.9848</p>
+                <p><strong>PSNR:</strong> 37.6175 dB</p>
+                <p><strong>64位提取率:</strong> 90.62%</p>
+                <p><strong>39位提取率:</strong> 92.31%</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+</body>
+</html>
