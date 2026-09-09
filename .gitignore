@@ -7,3 +7,7 @@ Thumbs.db
 
 # Generated intermediate outputs (large and reproducible)
 watermark_intermediates/
+
+# Python caches
+__pycache__/
+*.py[cod]

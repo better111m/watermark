@@ -1,0 +1,2 @@
+"""VideoSeal augmentation reference modules."""
+
